@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de Cafetería</title>
+    <link rel="stylesheet" href="diseño.css">
+</head>
+<body>
+
+    <header>
+        <h1>Menú de Cafetería</h1>
+        <div class="cart-summary">
+            Tu Orden (<span id="cart-item-count">0</span> ítems) - Total: $<span id="cart-total">0.00</span>
+        </div>
+    </header>
+
+    <main class="menu-container">
+        <section class="menu-category">
+            <h2>Café y Espresso</h2>
+            <div class="menu-item" data-name="Espresso" data-price="40.00">
+                <h3>Espresso</h3>
+                <p>Shot de café concentrado.</p>
+                <span class="price">$40.00</span>
+                <button class="add-to-cart-btn">Agregar</button>
+            </div>
+            <div class="menu-item" data-name="Capuchino" data-price="55.00">
+                <h3>Capuchino</h3>
+                <p>Espresso, leche vaporizada y espuma de leche.</p>
+                <span class="price">$55.00</span>
+                <button class="add-to-cart-btn">Agregar</button>
+            </div>
+            <div class="menu-item" data-name="Latte" data-price="50.00">
+                <h3>Latte</h3>
+                <p>Espresso con gran cantidad de leche vaporizada.</p>
+                <span class="price">$50.00</span>
+                <button class="add-to-cart-btn">Agregar</button>
+            </div>
+        </section>
+
+        <section class="menu-category">
+            <h2>BEBIDAS FRIAS</h2>
+            <div class="menu-item" data-name="Iced Latte" data-price="60.00">
+                <h3>Iced Latte</h3>
+                <p>Espresso y leche fría con hielo.</p>
+                <span class="price">$60.00</span>
+                <button class="add-to-cart-btn">Agregar</button>
+            </div>
+            <div class="menu-item" data-name="Té Helado" data-price="45.00">
+                <h3>Té Helado</h3>
+                <p>Té negro con limón y hielo.</p>
+                <span class="price">$45.00</span>
+                <button class="add-to-cart-btn">Agregar</button>
+            </div>
+            <div class="menu-item" data-name="Frappuccino" data-price="75.00">
+                <h3>Frappuccino</h3>
+                <p>Bebida a base de café, hielo y crema batida.</p>
+                <span class="price">$75.00</span>
+                <button class="add-to-cart-btn">Agregar</button>
+            </div>
+        </section>
+
+        <section class="menu-category">
+            <h2>POSTRES</h2>
+            <div class="menu-item" data-name="Croissant" data-price="35.00">
+                <h3>Croissant</h3>
+                <p>Clásico croissant de mantequilla.</p>
+                <span class="price">$35.00</span>
+                <button class="add-to-cart-btn">Agregar</button>
+            </div>
+            <div class="menu-item" data-name="Pastel de Zanahoria" data-price="65.00">
+                <h3>Pastel de Zanahoria</h3>
+                <p>Esponjoso pastel con glaseado de queso crema.</p>
+                <span class="price">$65.00</span>
+                <button class="add-to-cart-btn">Agregar</button>
+            </div>
+            <div class="menu-item" data-name="Muffin de Arándano" data-price="40.00">
+                <h3>Muffin de Arándano</h3>
+                <p>Muffin con trozos de arándano y un topping de streusel.</p>
+                <span class="price">$40.00</span>
+                <button class="add-to-cart-btn">Agregar</button>
+            </div>
+        </section>
+    </main>
+
+    <aside class="shopping-cart">
+        <h2>Tu Carrito</h2>
+        <ul id="cart-items-list">
+            <li>No hay productos agregados en el carrito.</li>
+        </ul>
+        <div class="cart-actions">
+            <button id="clear-cart-btn">Vaciar Carrito</button>
+        </div>
+    </aside>
+
+    <script src="funcionalidad.js"></script>
+</body>
+</html>
